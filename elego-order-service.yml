@@ -25,6 +25,7 @@ spring:
         generate-ddl: false
         hibernate:
             ddl-auto: none
+            use-new-id-generator-mappings: false
         show-sql: true
 
 authserver:
