@@ -18,6 +18,7 @@ spring:
         driver-class-name: com.mysql.jdbc.Driver
         password: '1234'
         platform: mysql
+        schema: classpath:/sql/schema.sql
         url: jdbc:mysql://localhost/delivery_order?verifyServerCertificate=false&useSSL=false&requireSSL=false&useTimezone=true&serverTimezone=UTC
         username: root
     jpa:
