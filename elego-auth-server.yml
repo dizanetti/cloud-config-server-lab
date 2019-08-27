@@ -17,12 +17,14 @@ eureka:
 security:
   oauth2:
     client:
-      access-token-validity-seconds: 1800
-      authorized-grant-types: password,refresh_token,client_credentials
-      client-id: coderef
+      access-token-validity-seconds: 50000
+      authorized-grant-types: password, authorization_code, refresh_token
+      client-id: client
       client-secret: $2a$10$p9Pk0fQNAQSesI4vuvKA0OZanDD2
-      resource-ids: resources
+      resource-ids: restservice
       scope: read,write
+    resource:
+      id: bcrypt
 
 spring:
   datasource:
