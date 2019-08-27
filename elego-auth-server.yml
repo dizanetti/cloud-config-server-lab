@@ -18,9 +18,10 @@ security:
   oauth2:
     client:
       access-token-validity-seconds: 50000
+      refresh-token-validity-seconds: 300000
       authorized-grant-types: password, authorization_code, refresh_token
       client-id: client
-      client-secret: $2a$10$p9Pk0fQNAQSesI4vuvKA0OZanDD2
+      client-secret: {bcrypt}$2a$10$yPn1N3sJW4/B.582Pys2/e4Os4O5eyFykVz7MzEJc0qVJO5xHDymW
       resource-ids: restservice
       scope: read,write
     resource:
