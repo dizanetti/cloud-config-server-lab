@@ -34,11 +34,11 @@ spring:
         binder:
           brokers: localhost:9092
       bindings:
-        greetings-in:
-          destination: greetings
+        pedido-in:
+          destination: pedidoIn
           contentType: application/json
-        greetings-out:
-          destination: greetings
+        pedido-out:
+          destination: pedidoOut
           contentType: application/json
 
 authserver:
