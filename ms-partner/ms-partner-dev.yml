@@ -1,2 +1,11 @@
 server:
   port: 9071
+  error:
+    include-message: always
+
+spring:
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: db-ms-partner
