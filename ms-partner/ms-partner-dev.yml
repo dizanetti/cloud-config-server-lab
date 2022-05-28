@@ -1,7 +1,5 @@
 server:
   port: 9071
-  error:
-    include-message: always
 
 spring:
   data:
