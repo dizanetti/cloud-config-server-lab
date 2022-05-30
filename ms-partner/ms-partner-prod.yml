@@ -12,7 +12,17 @@ spring:
   redis:
     host: localhost
     port: 6379
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
 
 cache:
   partner:
     duration-in-minutes: 60
+
+rabbitmq:
+  exchange: partnerExchange
+  queue: partnerQueueNew
+  routingkey: partnerRoutingkey
