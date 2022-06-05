@@ -2,6 +2,12 @@ server:
   port: 8071
 
 spring:
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
+      discovery:
+        instanceId: ${spring.application.name}:${random.value}
   data:
     mongodb:
       host: localhost
